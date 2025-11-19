@@ -15,7 +15,7 @@ from nltk.tokenize import sent_tokenize
 
 # ---------- Gemini setup ----------
 # GEMINI_KEY = os.getenv("GEMINI_API_KEY")
-GEMINI_API_KEY = "AIzaSyAPRiY_Us6lXr61yLdIK1KCSxY7MnnELWE"
+GEMINI_KEY = "AIzaSyAPRiY_Us6lXr61yLdIK1KCSxY7MnnELWE"
 if not GEMINI_KEY:
     st.error('❌ GEMINI_API_KEY not found. Run: setx GEMINI_API_KEY "YOUR_KEY_HERE"')
 genai.configure(api_key=GEMINI_KEY)
